@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:paddingTop="?attr/actionBarSize">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="top"
+        android:layout_marginBottom="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="top"
+            android:padding="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/border_bpttom">
+                <TextView
+                    android:id="@+id/matpname"
+                    android:text="Permission to Mobilize:"
+                    android:layout_gravity="left"
+                    android:layout_weight="0.5"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/matpgroup"
+                    android:gravity="right">
+                    <RadioButton
+                        android:text="Yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                        android:text="No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/border_bpttom">
+                <TextView
+                    android:id="@+id/matpname1"
+                    android:text="Permission:"
+                    android:layout_gravity="left"
+                    android:layout_weight="0.5"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/matpgroup1"
+                    android:gravity="right">
+                    <RadioButton
+                        android:text="Granted"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                        android:text="Declined"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/border_bpttom">
+                <TextView
+                    android:id="@+id/hintscomments"
+                    android:text="@string/hintscomments"
+                    android:layout_gravity="left"
+                    android:layout_weight="0.5"
+                    android:gravity="center_horizontal|left"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <RelativeLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="30dp">
+                    <FrameLayout
+                        android:id="@+id/frameLayout"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent">
+                        <EditText
+                            android:id="@+id/usertaskcomment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:inputType="textMultiLine"
+                            android:textColor="@color/colorAccent"
+                            android:cursorVisible="true"
+                            android:textCursorDrawable="@null"
+                            android:minLines="10"
+                            android:textAlignment="center"
+                            android:layout_gravity="top"
+                            android:gravity="center"
+                            android:hint="Write here your Comments"
+                            android:textColorHint="@color/black_overlay"/>
+
+                        <ImageButton android:id="@+id/ib_speak"
+                            android:layout_gravity="right|top"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/voice"
+                            android:background="@android:color/transparent"/>
+                    </FrameLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/prevbtn"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_weight=".01"
+            android:background="@null"
+            android:paddingLeft="50dp"
+            android:padding="5dp"
+            android:drawableLeft="@drawable/prevbtn"
+            />
+
+
+        <Button
+            android:id="@+id/nextbtn"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight=".01"
+            android:background="@null"
+            android:padding="5dp"
+            android:drawableRight="@drawable/nextbtn" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:paddingTop="?attr/actionBarSize">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginBottom="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:gravity="center"
+                    android:text="Please attach the file for material mobilization"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="25sp"
+                    android:lineSpacingExtra="10sp"
+                    android:padding="0dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <!--<ImageButton
+                    android:id="@+id/browsefaile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:src="@drawable/pdficon"
+                    android:textColor="@color/colorWhite"
+                    android:background="@android:color/transparent"/>-->
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:id="@+id/tvHeading"
+                    android:layout_marginTop="20dp"
+                    android:text="Touch the icon below to select the file"
+                    android:textColor="@color/colorDefault"
+                    android:textStyle="bold"/>
+                <ImageView
+                    android:id="@+id/ivAttachment"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/fileattach"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+
+                  <TextView
+                      android:id="@+id/tv_file_name"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/colorDefault"
+                      android:layout_marginTop="10dp"
+                      android:gravity="center"
+                      android:layout_below="@+id/ivAttachment"
+                      android:layout_centerHorizontal="true"/>
+                <!-- <Button
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/b_upload"
+                      android:text="Upload"
+                      android:textStyle="bold"
+                      android:textSize="20sp"
+                      android:layout_alignParentBottom="true"
+                      android:gravity="center"
+                      android:textColor="@color/colorWhite"
+                      android:layout_marginTop="30dp"
+                      android:background="@color/colorPrimary"/>-->
+
+
+                <Button
+                    android:id="@+id/b_upload"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Save the file in server"
+                    android:textAllCaps="false"
+                    android:background="@drawable/inpur_edit"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:drawableTop="@drawable/upload" />
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="bottom">
+
+            <Button
+                android:id="@+id/prevbtn"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_weight=".01"
+                android:background="@null"
+                android:paddingLeft="50dp"
+                android:padding="5dp"
+                android:drawableLeft="@drawable/prevbtn"
+                />
+
+
+            <Button
+                android:id="@+id/nextbtn"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight=".01"
+                android:background="@null"
+                android:padding="5dp"
+                android:drawableRight="@drawable/nextbtn" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
